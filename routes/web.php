@@ -18,3 +18,5 @@ Route::get('/', function () {
 //登陆注册
 Route::get('/user/reg','User\IndexController@reg'); //注册
 Route::get('/user/login', 'User\IndexController@login');//登陆
+
+Route::get('/goods/index', 'Goods\GoodsController@index');//商品
