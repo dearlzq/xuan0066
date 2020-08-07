@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 //登陆注册
-Route::get('/user/reg','User\IndexController@reg'); //注册
-Route::get('/user/login', 'User\IndexController@login');//登陆
-
-Route::get('/goods/index', 'Goods\GoodsController@index');//商品
+Route::get('/user/reg','User\IndexController@reg');     //用户注册
+Route::post('/user/reg','User\IndexController@regDo');  //执行注册
+Route::get('/user/login','User\IndexController@login');             //用户登录
+Route::post('/user/login','User\IndexController@loginDo');          //执行登录

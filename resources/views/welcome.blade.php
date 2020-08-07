@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                  Hello {{env('APP_ENV')}}
                 </div>
 
                 <div class="links">
